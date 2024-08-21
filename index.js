@@ -8,6 +8,8 @@ require('dotenv').config();
 // Configura o aplicativo Express
 const app = express();
 
+app.use(express.json());
+
 // Define a porta a partir da variável de ambiente PORT ou usa 3000 por padrão
 const PORT = process.env.PORT || 3000;
 
